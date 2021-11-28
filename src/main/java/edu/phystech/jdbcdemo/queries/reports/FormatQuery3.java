@@ -10,21 +10,18 @@ public class FormatQuery3 implements FormatofReport {
     private String arrival;
     private Long avgTime;
 
-    private final ArrayList<String> headers
+   public static final ArrayList<String> headers
             = new ArrayList<>(Arrays.asList("Departure city", "Arrival city", "Average flight duration"));
-
-    private final ArrayList<Object> items
-            = new ArrayList<>(Arrays.asList(departure, arrival, avgTime));
 
     @Override
     public ArrayList<Object> getItems() {
-        return items;
+        return new ArrayList<>(Arrays.asList(departure, arrival, avgTime));
     }
 
-    @Override
-    public ArrayList<String> getHeaders() {
-        return headers;
-    }
+//    @Override
+//    public static ArrayList<String> getHeaders() {
+//        return headers;
+//    }
 
     @Override
     public void printItems() {

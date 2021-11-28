@@ -11,21 +11,20 @@ public class FormatQuery1 implements FormatofReport {
     private String city;
     private String airportsList;
 
-    private final ArrayList<String> headers
+    public static final ArrayList<String> headers
             = new ArrayList<>(Arrays.asList("City", "Airports' list"));
 
-    private final ArrayList<Object> items
-            = new ArrayList<>(Arrays.asList(city, airportsList));
 
     @Override
     public ArrayList<Object> getItems() {
-        return items;
+        return new ArrayList<>(Arrays.asList(city, airportsList));
     }
 
-    @Override
-    public ArrayList<String> getHeaders() {
-        return headers;
-    }
+
+//    @Override
+//    public static ArrayList<String> getHeaders() {
+//        return headers;
+//    }
 
     @Override
     public void printItems(){

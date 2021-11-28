@@ -1,5 +1,5 @@
-CREATE TYPE "JSONB" AS varchar(255);
-CREATE TYPE "COORDS" AS varchar(255);
+CREATE TYPE IF NOT EXISTS "JSONB" AS varchar(255);
+CREATE TYPE IF NOT EXISTS "COORDS" AS varchar(255);
 
 create table aircrafts (
                            aircraft_code char(3) not null,

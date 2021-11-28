@@ -1,8 +1,10 @@
-package edu.phystech.jdbcdemo;
+package edu.phystech.jdbcdemo.service.dao;
 
+import edu.phystech.jdbcdemo.Hello;
 import edu.phystech.jdbcdemo.domain.*;
 import edu.phystech.jdbcdemo.queries.Queries;
 import edu.phystech.jdbcdemo.queries.reports.FormatQuery1;
+import edu.phystech.jdbcdemo.queries.reports.FormatQuery2;
 import edu.phystech.jdbcdemo.service.dao.*;
 import edu.phystech.jdbcdemo.service.db.DbFill;
 import org.h2.jdbcx.JdbcConnectionPool;
@@ -75,6 +77,24 @@ public class ConferenceDaoTest {
 //                    boardingPass.getTicketNo());
 //        }
 //    }
+//
+//    @Test
+//    void getQuery1() throws SQLException, IOException, NullPointerException {
+//        Queries g1 = new Queries(source);
+//        ArrayList<FormatQuery1> res = g1.getCitiesWithNumerousAirports();
+//        for(FormatQuery1 q : res) {
+//            q.printItems();
+//        }
+//    }
 
+
+//    @Test
+//    void getQuery2() throws SQLException, IOException, NullPointerException {
+//        Queries g2 = new Queries(source);
+//        ArrayList<FormatQuery2> res = g2.getCitiesWithCancelledFlights();
+//        for(FormatQuery2 q : res) {
+//            q.printItems();
+//        }
+//    }
 
 }

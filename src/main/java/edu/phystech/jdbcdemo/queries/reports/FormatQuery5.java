@@ -10,7 +10,7 @@ public class FormatQuery5 implements FormatofReport{
     private int incoming;
     private int outcoming;
 
-    private final ArrayList<String> headers
+    public static final ArrayList<String> headers
             = new ArrayList<>(Arrays.asList("Day", "Flights to Moscow", "Flights from Moscow"));
 
     private final ArrayList<Object> items
@@ -21,10 +21,10 @@ public class FormatQuery5 implements FormatofReport{
         return items;
     }
 
-    @Override
-    public ArrayList<String> getHeaders() {
-        return headers;
-    }
+//    @Override
+//    public static ArrayList<String> getHeaders() {
+//        return headers;
+//    }
 
     @Override
     public void printItems() {

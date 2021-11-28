@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public interface FormatofReport {
-    static ArrayList<Object> headers = null;
-    static ArrayList<Object> items = null;
+    static ArrayList<String > headers = null;
 
     public ArrayList<Object> getItems();
-
-    public ArrayList<? extends Object> getHeaders();
 
     public void printItems();
 }

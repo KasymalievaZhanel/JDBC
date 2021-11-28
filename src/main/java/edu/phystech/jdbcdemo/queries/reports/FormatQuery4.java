@@ -10,21 +10,18 @@ public class FormatQuery4 implements FormatofReport{
     private String month;
     private int numCancelled;
 
-    private final ArrayList<String> headers
+    public static final ArrayList<String> headers
             = new ArrayList<>(Arrays.asList("Month", "Number of cancelled"));
-
-    private final ArrayList<Object> items
-            =  new ArrayList<>(Arrays.asList(month, numCancelled));
 
     @Override
     public ArrayList<Object> getItems() {
-        return items;
+        return new ArrayList<>(Arrays.asList(month, numCancelled));
     }
 
-    @Override
-    public ArrayList<String> getHeaders() {
-        return headers;
-    }
+//    @Override
+//    public static ArrayList<String> getHeaders() {
+//        return headers;
+//    }
 
     @Override
     public void printItems() {

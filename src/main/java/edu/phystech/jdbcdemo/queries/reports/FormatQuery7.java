@@ -9,15 +9,14 @@ public class FormatQuery7 implements FormatofReport{
     private String day;
     private long loss;
 
-    private final ArrayList<String> headers
+    public static final ArrayList<String> headers
             = new ArrayList<>(Arrays.asList("Day", "Money loss"));
 
-    private final ArrayList<Object> items
-            = new ArrayList<>(Arrays.asList(day, loss));
+
 
     @Override
     public ArrayList<Object> getItems() {
-        return items;
+        return  new ArrayList<>(Arrays.asList(day, loss));
     }
 
     @Override
@@ -25,8 +24,8 @@ public class FormatQuery7 implements FormatofReport{
         System.out.println(day + " " + loss);
     }
 
-    @Override
-    public ArrayList<String> getHeaders() {
-        return headers;
-    }
+//    @Override
+//    public static ArrayList<String> getHeaders() {
+//        return headers;
+//    }
 }
